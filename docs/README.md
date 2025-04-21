@@ -10,6 +10,8 @@ mkdir results
 panaroo -i *.gff -o results --clean-mode strict
 ```
 
+Recommend parsing the input files from another folder.
+
 If you are using GFFs from RefSeq they can occasionally include annotations that do not conform the expected. This is usually due to a premature stop codon or a gene of invalid length. By default Panaroo will fail to parse these annotations. However, you can set Panaroo to ignore invalid annotaion by enabling the `remove-invalid-genes` flag 
 
 ```
